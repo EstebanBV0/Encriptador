@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+        <head>
+            <meta charset="UTF-8">
+            <title>Encriptador</title>
+            <link rel = "stylesheet" href="style.css"> <!-- css caracteristicas -->
+            <link rel="stylesheet" href="reset.css"> <!-- resetea configuraciones predeterminadas del navegador  -->
+
+        </head>
+        <body class="fondo">
+            <header>
+                <img src="imagenes/Vector.jpg"> <!-- la imagen de las esquina superior izquierda -->
+            </header>
+            <main >             
+                <div >
+                    <input id = "cuadrotexto" class="textoingreso" type="text" onclick = borrartexto() value="Ingrese el texto">  <!-- borrar con ponerle el clic -->
+                    <input class ="encriptar" type ="button" onclick= encript() value = "Encriptar" > <!-- boton de encriptar -->
+                    <input class ="desencriptar" type ="button" onclick= desencrip()   value = "Desencriptar" > <!-- boton de desencriptar -->
+                </div>
+
+                <div class = "rectangle">
+                    <img src="imagenes/Rectangle1.jpg"> <!-- rectangulo  -->
+                </div>
+                <div id ="muñ" >
+                    <img class = "muñeco" src="imagenes/Muñeco.jpg" > <!-- iman del muñeco -->
+                </div>             
+                    <textarea id ="resp" style = "display:none" class="respuesta" cols="25" rows="5" ></textarea> <!-- area de texto -->
+                    <input id = "btoncopiar"class ="botoncopiar" type ="button" onclick= copiartexto() style = "display:none"   value = "Copiar text" >   <!-- boton de copiar el texto -->         
+                    <p class="aviso">Ingresa el texto que deseees <br> desencriptar o encriptar.</p>            
+            </main> 
+            <script src="codejs.js"></script>
+        </body>
+        
+</html>
